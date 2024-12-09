@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body {
+        @apply font-body;
+        /* here we are applying throughout the body the same font that is defined */
+    }
+    h1,h2,h3 {
+        @apply font-display text-gray-800 font-medium;
+        /* here we are using this so that we no longer need to write it again n again */
+    }
+    anchor-hover{
+        @apply border-b border-dotted border-y-gray-300 hover:border-solid hover:border-gray-500;
+    }
+}
